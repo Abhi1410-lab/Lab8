@@ -1,23 +1,24 @@
 package com.example.lab8;
 
-import static org.junit.Assert.assertEquals;
 
-import org.junit.Before;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
 public class CustomListTest {
+
     private CustomList list;
 
-    @Before
-    public void createList(){
-        list = new CustomList(null, new ArrayList<City>());
-    }
+
     @Test
     public void addCityTest(){
+        list = new CustomList(null, new ArrayList<City>());
         int listSize = list.getCount();
-        list.addCity(new City("Edmonton","AB"));
-        assertEquals(list.getCount(), listSize+1);
+        list.addCity(new City("Edmo","AB"));
+        assertEquals(list.getCount(),listSize+1);
     }
+
 }
