@@ -23,8 +23,13 @@ public class CustomListTest {
     @Test
     public void deleteCityTest(){
         list = new CustomList(null, new ArrayList<City>());
+        City city = new City("Edmo","AB");
+        list.addCity(city);
+
         int listSize = list.getCount();
         list.deleteCity(new City("Edmo","AB"));
         assertEquals(list.getCount(),listSize-1);
     }
+    @Test
+    public void
 }
