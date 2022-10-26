@@ -28,8 +28,7 @@ public class CustomListTest {
 
         int listSize = list.getCount();
         list.deleteCity(new City("Edmo","AB"));
-        assertEquals(list.getCount(),listSize-1);
+        assertEquals(list.getCount(),1);
     }
-    @Test
-    public void
+
 }
