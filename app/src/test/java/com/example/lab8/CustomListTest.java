@@ -38,4 +38,13 @@ public class CustomListTest {
         assertEquals(true, list2.hasCity(city));
     }
 
+    @Test
+    public int countCitiesTest(){
+        CustomList list3 = new CustomList(null, new ArrayList<City>());
+        City city = new City("Edmo","AB");
+        list3.addCity(city);
+        int listSize = list3.getCount();
+        assertEquals(listSize, list3.countCities());
+    }
+
 }
