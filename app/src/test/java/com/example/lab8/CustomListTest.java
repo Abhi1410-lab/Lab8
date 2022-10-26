@@ -39,7 +39,7 @@ public class CustomListTest {
     }
 
     @Test
-    public int countCitiesTest(){
+    public void countCitiesTest(){
         CustomList list3 = new CustomList(null, new ArrayList<City>());
         City city = new City("Edmo","AB");
         list3.addCity(city);
